@@ -70,7 +70,8 @@ pointer-events:auto;
 .title{
 
 font-size:4rem;
-font-family:'Great Vibes',cursive;
+font-family: 'Playfair Display', serif;
+
 
 text-shadow:
 0 0 15px #d8b4fe,
@@ -369,6 +370,23 @@ translateX(120px)
 rotate(20deg);
 
 opacity:0;
+
+}
+from{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    font-size:1.6rem;
+
+    color:#f8e8ff;
+
+    font-family:'Great Vibes',cursive;
+
+    letter-spacing:1px;
+
+    animation:glow 2s infinite alternate;
 
 }
 

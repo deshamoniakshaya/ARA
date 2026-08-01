@@ -1,0 +1,375 @@
+/* Google Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Poppins',sans-serif;
+    overflow:hidden;
+    color:white;
+    height:100vh;
+
+    background:linear-gradient(-45deg,
+    #140021,
+    #2b0a4d,
+    #5d2d91,
+    #8a2be2);
+
+    background-size:400% 400%;
+    animation:bgMove 12s ease infinite;
+}
+
+@keyframes bgMove{
+
+0%{
+background-position:0% 50%;
+}
+
+50%{
+background-position:100% 50%;
+}
+
+100%{
+background-position:0% 50%;
+}
+
+}
+
+.page{
+
+position:absolute;
+width:100%;
+height:100vh;
+
+display:flex;
+flex-direction:column;
+
+justify-content:center;
+align-items:center;
+
+padding:30px;
+
+opacity:0;
+pointer-events:none;
+
+transition:.8s;
+}
+
+.page.active{
+
+opacity:1;
+pointer-events:auto;
+
+}
+
+.title{
+
+font-size:4rem;
+font-family:'Great Vibes',cursive;
+
+text-shadow:
+0 0 15px #d8b4fe,
+0 0 35px #c084fc;
+
+margin-bottom:20px;
+
+text-align:center;
+
+}
+
+.subtitle{
+
+font-size:1.2rem;
+
+max-width:700px;
+
+text-align:center;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+color:#eee;
+
+}
+
+button{
+
+padding:15px 40px;
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+background:#b16cff;
+
+color:white;
+
+transition:.4s;
+
+box-shadow:
+0 0 20px #b16cff;
+
+}
+
+button:hover{
+
+transform:scale(1.08);
+
+background:#d39cff;
+
+box-shadow:
+0 0 40px #d39cff;
+
+}
+
+.card{
+
+width:85%;
+max-width:800px;
+
+padding:50px;
+
+border-radius:25px;
+
+background:rgba(255,255,255,.12);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.25);
+
+text-align:center;
+
+box-shadow:
+0 0 35px rgba(255,255,255,.15);
+
+}
+/* ===========================
+   PAGE 2
+=========================== */
+
+.card h2{
+    font-size:2.5rem;
+    margin-bottom:25px;
+    color:#f5e6ff;
+    font-family:'Great Vibes',cursive;
+}
+
+#typing{
+    font-size:1.2rem;
+    line-height:2;
+    color:#ffffff;
+    min-height:220px;
+}
+
+/* ===========================
+   PAGE 3
+=========================== */
+
+.thanks{
+    font-family:'Great Vibes',cursive;
+    font-size:4rem;
+    color:#ffffff;
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 15px #d9b3ff,
+    0 0 35px #b266ff;
+}
+
+.ending{
+    width:80%;
+    max-width:700px;
+
+    text-align:center;
+
+    line-height:2;
+
+    font-size:1.2rem;
+
+    margin-bottom:35px;
+}
+
+.names{
+
+    font-size:3rem;
+
+    color:#f4d7ff;
+
+    margin-bottom:20px;
+
+    text-shadow:
+    0 0 20px #c77dff,
+    0 0 40px #9d4edd;
+}
+
+.happy{
+
+    font-size:1.6rem;
+
+    margin-bottom:30px;
+
+}
+
+.love{
+
+    font-size:2rem;
+
+    color:#fff;
+
+    animation:glow 2s infinite alternate;
+
+}
+
+@keyframes glow{
+
+from{
+
+text-shadow:
+0 0 10px #fff,
+0 0 20px #d291ff;
+
+}
+
+to{
+
+text-shadow:
+0 0 25px #fff,
+0 0 60px #b16cff;
+
+}
+
+}
+
+/* ===========================
+   SPARKLES
+=========================== */
+
+#sparkles{
+
+position:fixed;
+
+left:0;
+top:0;
+
+width:100%;
+height:100%;
+
+overflow:hidden;
+
+pointer-events:none;
+
+}
+
+.sparkle{
+
+position:absolute;
+
+width:6px;
+height:6px;
+
+border-radius:50%;
+
+background:white;
+
+box-shadow:
+0 0 15px #ffffff,
+0 0 30px #d9b3ff;
+
+animation:twinkle linear infinite;
+
+}
+
+@keyframes twinkle{
+
+0%{
+
+opacity:0;
+transform:translateY(0) scale(.5);
+
+}
+
+50%{
+
+opacity:1;
+
+}
+
+100%{
+
+opacity:0;
+transform:translateY(-150px) scale(1.4);
+
+}
+
+}
+
+/* ===========================
+   BUTTERFLIES
+=========================== */
+
+#butterflies{
+
+position:fixed;
+
+width:100%;
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+}
+
+.butterfly{
+
+position:absolute;
+
+font-size:28px;
+
+animation:fly linear infinite;
+
+filter:drop-shadow(0 0 10px #d8b4fe);
+
+}
+
+@keyframes fly{
+
+0%{
+
+transform:
+translateY(120vh)
+translateX(0)
+rotate(0deg);
+
+opacity:0;
+
+}
+
+15%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:
+translateY(-120vh)
+translateX(120px)
+rotate(20deg);
+
+opacity:0;
+
+}
+
+}
